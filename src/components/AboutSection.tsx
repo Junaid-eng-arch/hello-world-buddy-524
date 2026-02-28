@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import aboutStudents from "@/assets/about-students.jpg";
 
 const features = [
   "ISO 9001:2015 Certified Institution",
@@ -51,22 +52,27 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 border border-border">
-              <div className="space-y-6">
-                <div className="bg-card rounded-xl p-6 shadow-sm border border-border">
-                  <h3 className="font-heading text-xl font-bold text-primary mb-2">Our Mission</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    To provide quality paramedical education that combines theoretical knowledge with practical skills, 
-                    producing competent healthcare professionals ready to serve the community.
-                  </p>
-                </div>
-                <div className="bg-card rounded-xl p-6 shadow-sm border border-border">
-                  <h3 className="font-heading text-xl font-bold text-primary mb-2">Our Vision</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    To be a leading institution in paramedical education, recognized for academic excellence, 
-                    innovative training methods, and producing skilled professionals who make a difference in healthcare.
-                  </p>
-                </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg mb-6">
+              <img
+                src={aboutStudents}
+                alt="Students at Little Flower Institute"
+                className="w-full h-72 object-cover"
+              />
+            </div>
+            <div className="space-y-4">
+              <div className="bg-card rounded-xl p-6 shadow-sm border border-border">
+                <h3 className="font-heading text-xl font-bold text-primary mb-2">Our Mission</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  To provide quality paramedical education that combines theoretical knowledge with practical skills, 
+                  producing competent healthcare professionals ready to serve the community.
+                </p>
+              </div>
+              <div className="bg-card rounded-xl p-6 shadow-sm border border-border">
+                <h3 className="font-heading text-xl font-bold text-primary mb-2">Our Vision</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  To be a leading institution in paramedical education, recognized for academic excellence, 
+                  innovative training methods, and producing skilled professionals who make a difference in healthcare.
+                </p>
               </div>
             </div>
           </motion.div>
