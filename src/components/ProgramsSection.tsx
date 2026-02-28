@@ -1,41 +1,51 @@
 import { motion } from "framer-motion";
 import { Clock, BookOpen, ArrowRight } from "lucide-react";
+import programMlt from "@/assets/program-mlt.jpg";
+import programRadiology from "@/assets/program-radiology.jpg";
+import programCardiac from "@/assets/program-cardiac.jpg";
+import programDialysis from "@/assets/program-dialysis.jpg";
 
 const programs = [
   {
     title: "BSc Medical Laboratory Technology",
     duration: "3 Years",
     type: "BSc",
+    image: programMlt,
     description: "Comprehensive training in diagnostic laboratory techniques, clinical pathology, microbiology, and biochemistry with hospital-based practicals.",
   },
   {
     title: "BSc Radiology & Imaging Technology",
     duration: "3 Years",
     type: "BSc",
+    image: programRadiology,
     description: "Learn advanced imaging techniques including X-ray, CT scan, MRI, and ultrasound with hands-on experience in multi-speciality hospitals.",
   },
   {
     title: "BSc Cardiac Care Technology",
     duration: "3 Years",
     type: "BSc",
+    image: programCardiac,
     description: "Specialized training in ECG, ECHO, cardiac catheterization, and critical care monitoring in partnership with leading cardiac centres.",
   },
   {
     title: "BVoc Medical Laboratory Technology",
     duration: "3 Years",
     type: "BVoc",
+    image: programMlt,
     description: "Vocational program combining academic coursework with extensive on-the-job training in clinical laboratories.",
   },
   {
     title: "BVoc Radiology & Imaging Technology",
     duration: "3 Years",
     type: "BVoc",
+    image: programRadiology,
     description: "Industry-aligned vocational training in radiological sciences with certification and employment-ready skills.",
   },
   {
     title: "BVoc Dialysis Technology",
     duration: "3 Years",
     type: "BVoc",
+    image: programDialysis,
     description: "Hands-on training in hemodialysis, peritoneal dialysis, and renal care management under expert supervision.",
   },
 ];
@@ -67,25 +77,34 @@ const ProgramsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="bg-card rounded-xl shadow-sm border border-border p-6 hover:shadow-lg transition-shadow group"
+              className="bg-card rounded-xl shadow-sm border border-border overflow-hidden hover:shadow-lg transition-shadow group"
             >
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4">
-                {program.type}
-              </span>
-              <h3 className="font-heading text-lg font-bold text-foreground mb-3">{program.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4">{program.description}</p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                  <span className="flex items-center gap-1">
-                    <Clock size={14} /> {program.duration}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Full Time
-                  </span>
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={program.image}
+                  alt={program.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4">
+                  {program.type}
+                </span>
+                <h3 className="font-heading text-lg font-bold text-foreground mb-3">{program.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{program.description}</p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <span className="flex items-center gap-1">
+                      <Clock size={14} /> {program.duration}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <BookOpen size={14} /> Full Time
+                    </span>
+                  </div>
+                  <a href="#contact" className="text-secondary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Apply <ArrowRight size={14} />
+                  </a>
                 </div>
-                <a href="#contact" className="text-secondary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Apply <ArrowRight size={14} />
-                </a>
               </div>
             </motion.div>
           ))}

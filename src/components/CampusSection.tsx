@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Building2, UtensilsCrossed, FlaskConical, Hotel, Stethoscope, Users } from "lucide-react";
+import campusView from "@/assets/campus-view.jpg";
 
 const facilities = [
   { icon: Building2, title: "5-Acre Campus", description: "Spacious green campus with modern infrastructure" },
@@ -27,6 +28,20 @@ const CampusSection = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Our campus provides a complete ecosystem for learning, living, and growing as a healthcare professional.
           </p>
+        </motion.div>
+
+        {/* Campus Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="rounded-2xl overflow-hidden shadow-lg mb-12"
+        >
+          <img
+            src={campusView}
+            alt="Little Flower Institute Campus, Aluva"
+            className="w-full h-64 md:h-80 object-cover"
+          />
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
