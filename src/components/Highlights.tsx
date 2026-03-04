@@ -20,11 +20,14 @@ const Highlights = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="bg-card rounded-xl shadow-lg p-6 text-center border border-border"
+              className="bg-card rounded-2xl shadow-xl p-6 text-center border border-border hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group"
             >
-              <stat.icon className="mx-auto mb-3 text-secondary" size={32} />
+              <div className="mx-auto mb-4 w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300">
+                <stat.icon className="text-secondary" size={28} />
+              </div>
               <p className="font-heading text-3xl font-bold text-primary">{stat.value}</p>
-              <p className="text-muted-foreground text-sm mt-1">{stat.label}</p>
+              <div className="w-8 h-0.5 bg-secondary/40 mx-auto my-2 rounded-full" />
+              <p className="text-muted-foreground text-sm mt-1 tracking-wide">{stat.label}</p>
             </motion.div>
           ))}
         </div>
