@@ -13,9 +13,9 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-2xl">
-          <p className="text-secondary font-body font-semibold text-sm tracking-widest uppercase mb-4">
-            Little Flower Institute of Paramedical Studies, Aluva
-          </p>
+          <p className="text-white font-body font-semibold text-sm tracking-widest uppercase mb-4">
+  Little Flower Institute of Paramedical Studies, Aluva
+</p>
          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
              <span className="text-white">Empowering Careers in</span>{" "}
                 <span className="text-white">Healthcare</span>
