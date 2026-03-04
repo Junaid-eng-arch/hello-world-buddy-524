@@ -18,7 +18,7 @@ const HeroSection = () => {
           </p>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
             <span className="text-hero-blue">Empowering Careers in</span>{" "}
-            <span className="text-highlight">Healthcare</span>
+            <span className="text-hero-blue">Healthcare</span>
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl font-light mb-8 max-w-xl">
             58+ years of legacy in education. Building the next generation of healthcare professionals with hands-on training and 100% placement support.
