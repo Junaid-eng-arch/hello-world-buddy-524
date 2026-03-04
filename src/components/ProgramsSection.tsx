@@ -1,54 +1,7 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Clock, BookOpen, ArrowRight } from "lucide-react";
-import programMlt from "@/assets/program-mlt.jpg";
-import programRadiology from "@/assets/program-radiology.jpg";
-import programCardiac from "@/assets/program-cardiac.jpg";
-import programDialysis from "@/assets/program-dialysis.jpg";
-
-const programs = [
-  {
-    title: "BSc Medical Laboratory Technology",
-    duration: "3 Years",
-    type: "BSc",
-    image: programMlt,
-    description: "Comprehensive training in diagnostic laboratory techniques, clinical pathology, microbiology, and biochemistry with hospital-based practicals.",
-  },
-  {
-    title: "BSc Radiology & Imaging Technology",
-    duration: "3 Years",
-    type: "BSc",
-    image: programRadiology,
-    description: "Learn advanced imaging techniques including X-ray, CT scan, MRI, and ultrasound with hands-on experience in multi-speciality hospitals.",
-  },
-  {
-    title: "BSc Cardiac Care Technology",
-    duration: "3 Years",
-    type: "BSc",
-    image: programCardiac,
-    description: "Specialized training in ECG, ECHO, cardiac catheterization, and critical care monitoring in partnership with leading cardiac centres.",
-  },
-  {
-    title: "BVoc Medical Laboratory Technology",
-    duration: "3 Years",
-    type: "BVoc",
-    image: programMlt,
-    description: "Vocational program combining academic coursework with extensive on-the-job training in clinical laboratories.",
-  },
-  {
-    title: "BVoc Radiology & Imaging Technology",
-    duration: "3 Years",
-    type: "BVoc",
-    image: programRadiology,
-    description: "Industry-aligned vocational training in radiological sciences with certification and employment-ready skills.",
-  },
-  {
-    title: "BVoc Dialysis Technology",
-    duration: "3 Years",
-    type: "BVoc",
-    image: programDialysis,
-    description: "Hands-on training in hemodialysis, peritoneal dialysis, and renal care management under expert supervision.",
-  },
-];
+import { programs } from "@/data/programs";
 
 const ProgramsSection = () => {
   return (
@@ -101,9 +54,9 @@ const ProgramsSection = () => {
                       <BookOpen size={14} /> Full Time
                     </span>
                   </div>
-                  <a href="#contact" className="text-secondary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Apply <ArrowRight size={14} />
-                  </a>
+                  <Link to={`/programs/${program.slug}`} className="text-secondary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Details <ArrowRight size={14} />
+                  </Link>
                 </div>
               </div>
             </motion.div>
