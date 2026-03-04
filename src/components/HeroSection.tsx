@@ -34,9 +34,20 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/60">
+      {/* <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/60">
         <ChevronDown size={28} />
-      </motion.div>
+      </motion.div> */}
+      <motion.div
+  animate={{ y: [0, 8, 0] }}
+  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+  className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 cursor-pointer"
+>
+  <span className="text-white/50 text-xs font-semibold tracking-widest uppercase">
+    Scroll
+  </span>
+  <div className="w-px h-6 bg-gradient-to-b from-white/50 to-transparent" />
+  <ChevronDown size={20} className="text-white/60" />
+</motion.div>
     </section>
   );
 };
