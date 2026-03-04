@@ -54,6 +54,7 @@ export default {
         topbar: "hsl(var(--topbar-bg))",
         highlight: "hsl(var(--highlight))",
         "hero-overlay": "hsl(var(--hero-overlay))",
+        "hero-blue": "hsl(var(--hero-blue))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
