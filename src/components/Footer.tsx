@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <Link to="/" className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center font-heading font-bold text-lg">
                 LF
               </div>
@@ -14,7 +15,7 @@ const Footer = () => {
                 <h3 className="font-heading font-bold text-lg">Little Flower</h3>
                 <p className="text-primary-foreground/60 text-xs">Institute of Paramedical Studies</p>
               </div>
-            </div>
+            </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Empowering the next generation of healthcare professionals since 1967 under the Social Welfare Campus, Aluva.
             </p>
@@ -23,14 +24,19 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">Quick Links</h4>
             <div className="grid grid-cols-2 gap-2">
-              {["About", "Programs", "Campus", "Contact", "Admissions", "Careers"].map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+              {[
+                { label: "About", to: "/about" },
+                { label: "Programs", to: "/programs" },
+                { label: "Campus", to: "/campus" },
+                { label: "Contact", to: "/contact" },
+              ].map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
                   className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors"
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               ))}
             </div>
           </div>
