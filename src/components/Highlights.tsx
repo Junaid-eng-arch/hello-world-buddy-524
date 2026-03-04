@@ -20,13 +20,10 @@ const Highlights = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="bg-card rounded-2xl shadow-xl p-6 text-center border border-border hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+              className="bg-card rounded-2xl shadow-md p-6 text-center border border-border group relative overflow-hidden"
             >
-              {/* Soft background glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
-
               {/* Icon */}
-              <div className="mx-auto mb-4 w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 group-hover:scale-110 transition-all duration-300">
+              <div className="mx-auto mb-4 w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center">
                 <stat.icon className="text-secondary" size={30} strokeWidth={1.5} />
               </div>
 
@@ -34,7 +31,7 @@ const Highlights = () => {
               <p className="font-heading text-3xl font-bold text-primary leading-none">{stat.value}</p>
 
               {/* Divider */}
-              <div className="w-10 h-0.5 bg-secondary/40 mx-auto my-2 rounded-full group-hover:w-16 transition-all duration-300" />
+              <div className="w-10 h-0.5 bg-secondary/40 mx-auto my-2 rounded-full" />
 
               {/* Label */}
               <p className="text-primary font-semibold text-sm tracking-wide">{stat.label}</p>
