@@ -291,15 +291,7 @@ const CampusSection = () => {
           style={{ textAlign: "center", marginBottom: "48px" }}
         >
           {/* ✅ BLUE */}
-        <span style={{
-  display: "inline-block",
-  color: "#2563eb", // blue
-  fontWeight: 700,
-  fontSize: "12px",
-  letterSpacing: "4px",
-  textTransform: "uppercase",
-  marginBottom: "12px",
-}}>
+      <span className="text-blue-600 font-bold text-xs tracking-widest uppercase mb-3">
   Campus & Facilities
 </span>
 
