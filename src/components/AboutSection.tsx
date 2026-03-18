@@ -22,7 +22,9 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-secondary font-semibold text-sm tracking-widest uppercase mb-2">About Us</p>
+            <p className="text-blue-600 font-semibold text-sm tracking-widest uppercase mb-2">
+  About Us
+</p>
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
               A Legacy of Excellence in <span className="text-primary">Paramedical Education</span>
             </h2>
