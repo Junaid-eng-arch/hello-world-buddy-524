@@ -27,7 +27,7 @@ const AboutSection = () => {
 </p>
            <h2 className="font-heading text-3xl md:text-4xl text-black mb-6">
   A Legacy of Excellence in{" "}
-  <span className="text-primary">Paramedical Education</span>
+  <span className="text-black">Paramedical Education</span>
 </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Little Flower Institute of Paramedical Studies, located in Aluva, Ernakulam (just 2 km from the railway station), 
