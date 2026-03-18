@@ -66,10 +66,10 @@
   }
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
-  }
+  } */
 
   .section-padding {
     @apply py-16 md:py-24 px-4;
