@@ -291,17 +291,17 @@ const CampusSection = () => {
           style={{ textAlign: "center", marginBottom: "48px" }}
         >
           {/* ✅ BLUE */}
-          <span style={{
-            display: "inline-block",
-            color: "#2563eb", // 💙 BLUE
-            fontWeight: 700,
-            fontSize: "12px",
-            letterSpacing: "4px",
-            textTransform: "uppercase",
-            marginBottom: "12px",
-          }}>
-            Campus & Facilities
-          </span>
+        <span style={{
+  display: "inline-block",
+  color: "#2563eb", // blue
+  fontWeight: 700,
+  fontSize: "12px",
+  letterSpacing: "4px",
+  textTransform: "uppercase",
+  marginBottom: "12px",
+}}>
+  Campus & Facilities
+</span>
 
           {/* ✅ BLACK */}
           <h2 style={{
