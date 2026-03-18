@@ -132,22 +132,15 @@ const CampusSection = () => {
           }}>
             Campus & Facilities
           </span>
-          <h2 style={{
-            fontSize: "clamp(28px, 4vw, 40px)",
-            fontWeight: 800,
-            color: "#0f172a",
-            marginBottom: "16px",
-            lineHeight: 1.2,
-          }}>
-            Everything You Need to{" "}
-            <span style={{
-              background: "linear-gradient(90deg, #0d9488, #0891b2)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}>
-              Succeed
-            </span>
-          </h2>
+        <h2 style={{
+  fontSize: "clamp(28px, 4vw, 40px)",
+  fontWeight: 800,
+  color: "#111827", // ✅ soft black (recommended)
+  marginBottom: "16px",
+  lineHeight: 1.2,
+}}>
+  Everything You Need to Succeed
+</h2>
           <p style={{ color: "#64748b", maxWidth: "560px", margin: "0 auto", fontSize: "16px", lineHeight: 1.7 }}>
             Our campus provides a complete ecosystem for learning, living, and growing as a healthcare professional.
           </p>
