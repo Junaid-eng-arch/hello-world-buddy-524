@@ -243,7 +243,6 @@
 
 
 
-
 import { motion } from "framer-motion";
 import { Building2, UtensilsCrossed, FlaskConical, Hotel, Stethoscope, Users } from "lucide-react";
 import campusView from "@/assets/campus-view.jpg";
@@ -367,7 +366,7 @@ const CampusSection = () => {
                 cursor: "default",
                 position: "relative",
               }}
-          >
+            >
               {/* Icon box */}
               <div style={{
                 width: "52px",
@@ -416,3 +415,4 @@ const CampusSection = () => {
 };
 
 export default CampusSection;
+
