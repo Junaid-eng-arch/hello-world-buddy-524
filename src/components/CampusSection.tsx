@@ -119,17 +119,16 @@ const CampusSection = () => {
           viewport={{ once: true }}
           style={{ textAlign: "center", marginBottom: "48px" }}
         >
-          <span style={{
-            display: "inline-block",
-            background: "linear-gradient(90deg, #0d9488, #0891b2)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontWeight: 700,
-            fontSize: "12px",
-            letterSpacing: "4px",
-            textTransform: "uppercase",
-            marginBottom: "12px",
-          }}>
+        <span style={{
+  display: "inline-block",
+  color: "#000000", // ✅ black
+  fontWeight: 700,
+  fontSize: "12px",
+  letterSpacing: "4px",
+  textTransform: "uppercase",
+  marginBottom: "12px",
+}}>
+      
             Campus & Facilities
           </span>
         <h2 style={{
