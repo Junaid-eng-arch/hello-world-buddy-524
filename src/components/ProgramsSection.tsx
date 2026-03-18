@@ -13,7 +13,9 @@ const ProgramsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-secondary font-semibold text-sm tracking-widest uppercase mb-2">Our Programs</p>
+          <p className="text-blue-600 font-semibold text-sm tracking-widest uppercase mb-2">
+  Our Programs
+</p>
           <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-4">
             Career-Focused <span className="text-primary">Healthcare Programs</span>
           </h2>
