@@ -25,9 +25,10 @@ const AboutSection = () => {
             <p className="text-blue-600 font-semibold text-sm tracking-widest uppercase mb-2">
   About Us
 </p>
-            <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
-              A Legacy of Excellence in <span className="text-primary">Paramedical Education</span>
-            </h2>
+           <h2 className="font-heading text-3xl md:text-4xl text-black mb-6">
+  A Legacy of Excellence in{" "}
+  <span className="text-primary">Paramedical Education</span>
+</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Little Flower Institute of Paramedical Studies, located in Aluva, Ernakulam (just 2 km from the railway station), 
               is a premier institution offering BSc and BVoc programs. With a strong focus on practical training, 
