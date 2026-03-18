@@ -16,9 +16,9 @@ const ProgramsSection = () => {
           <p className="text-blue-600 font-semibold text-sm tracking-widest uppercase mb-2">
   Our Programs
 </p>
-         <p className="text-black font-semibold text-sm tracking-widest uppercase mb-2">
-  Our Programs
-</p>
+         <h2 className="font-heading text-3xl md:text-4xl text-gray-900 mb-4">
+  Career-Focused Healthcare Programs
+</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Choose from our CTDS-affiliated BSc and BVoc programs designed to prepare you for a successful healthcare career.
           </p>
