@@ -296,15 +296,9 @@ const CampusSection = () => {
 </span>
 
           {/* ✅ BLACK */}
-          <h2 style={{
-            fontSize: "clamp(28px, 4vw, 40px)",
-            fontWeight: 800,
-            color: "#111827", // 🖤 BLACK
-            marginBottom: "16px",
-            lineHeight: 1.2,
-          }}>
-            Everything You Need to Succeed
-          </h2>
+         <h2 className="text-4xl font-extrabold text-gray-900">
+  Everything You Need to Succeed
+</h2>
 
           <p style={{ color: "#64748b", maxWidth: "560px", margin: "0 auto", fontSize: "16px", lineHeight: 1.7 }}>
             Our campus provides a complete ecosystem for learning, living, and growing as a healthcare professional.
